@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="public/style/index.css">
+  <script src="public/dist/main.js" defer></script>
+  <title>Calculadora Científica</title>
+</head>
+<body>
+  <main>
+    <h1>Calculadora Científica</h1>
+    <div>
+      <input type="text" disabled id="inputConta">
+      <input type="text" id="inputValue">
+    </div>
+    <section>
+      <article id="first">
+        <table>
+          <tr>
+            <td colspan="2"><button class="symbols delete" data-value="C">C</button></td>
+            <td><button class="symbols delete" data-value="CE">CE</button></td>
+            <td><button class="symbols" data-value=" + " data-exp="+">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="numbers" data-value="7" data-exp="7">7</button></td>
+            <td><button class="numbers" data-value="8" data-exp="8">8</button></td>
+            <td><button class="numbers" data-value="9" data-exp="9">9</button></td>
+            <td><button class="symbols" data-value=" X " data-exp="*">X</button></td>
+          </tr>
+          <tr>
+            <td><button class="numbers" data-value="4" data-exp="4">4</button></td>
+            <td><button class="numbers" data-value="5" data-exp="5">5</button></td>
+            <td><button class="numbers" data-value="6" data-exp="6">6</button></td>
+            <td><button class="symbols" data-value=" - " data-exp="-">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="numbers" data-value="1" data-exp="1">1</button></td>
+            <td><button class="numbers" data-value="2" data-exp="2">2</button></td>
+            <td><button class="numbers" data-value="3" data-exp="3">3</button></td>
+            <td><button class="symbols" data-value=" / " data-exp="/">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="symbols" data-value="." data-exp=".">.</button></td>
+            <td><button class="numbers" data-value="0" data-exp="0">0</button></td>
+            <td colspan="2"><button class="result" data-value="=">=</button></td>
+          </tr>
+        </table>
+      </article>
+
+      <article id="second">
+        <table>
+          <tbody id="calc-cient">
+            <tr>
+              <td><button data-value="sin(" data-exp="Math.sin((Math.PI/(180))*">Sin</button></td>
+              <td><button data-value="sin⁻¹(" data-exp="(180/Math.PI)*Math.asin(">Sin<sup>-1</sup></button></td>
+              <td><button data-value="!">!</button></td>
+              <td><button data-value="ln(" data-exp="Math.log(">Ln</button></td>
+            </tr>
+            <tr>
+              <td><button data-value="cos(" data-exp="Math.cos((Math.PI/(180))*">Cos</button></td>
+              <td><button data-value="cos⁻¹(" data-exp="(180/Math.PI)*Math.acos(">Cos<sup>-1</sup></button></td>
+              <td><button data-value="log10" data-exp="Math.LOG10E">Log<sub>10</sub></button></td>
+              <td><button data-value="%" data-exp="/100">%</button></td>
+            </tr>
+            <tr>
+              <td><button data-value="tan(" data-exp="Math.tan((Math.PI/(180))*">Tan</button></td>
+              <td><button data-value="tan⁻¹(" data-exp="(180/Math.PI)*Math.atan(">Tan<sup>-1</sup></button></td>
+              <td><button data-value="e^" data-exp="Math.E**">e<sup>x</sup></button></td>
+              <td><button data-value="^" data-exp="**">^</button></td>
+            </tr>
+            <tr>
+              <td><button data-value="√(" data-exp="Math.sqrt("><sup>2</sup>√</button></td>
+              <td><button data-value="3√(" data-exp="Math.cbrt("><sup>3</sup>√</button></td>
+              <td><button data-value="𝝅" data-exp="Math.PI">π</button></td>
+              <td><button data-value="e" data-exp="Math.E">e</button></td>
+            </tr>
+            <tr>
+              <td><button data-value="(" data-exp="(">(</button></td>
+              <td><button data-value=")" data-exp=")">)</button></td>
+              <td><button data-value="^2" data-exp="**2">x<sup>2</sup></button></td>
+              <td><button data-value="^3" data-exp="**3">x<sup>3</sup></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

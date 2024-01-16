@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+main {
+  background-image: linear-gradient(135deg, #063D3E, #208F96);
+  width: 90%;
+  height: 65%;
+  border-radius: 10px;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main h1 {
+  color: white;
+  font-size: 1.38rem;
+  text-align: center;
+}
+
+main div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+div input {
+  height: 100%;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 8px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+div input:nth-child(odd) {
+  border-radius: 10px 10px 0px 0px;
+  background-color: white;
+}
+
+div input:nth-child(even) {
+  border-radius: 0px 0px 10px 10px;
+  font-weight: 500;
+}
+
+main section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#first, #second {
+  height: 50%;
+  padding: 0px;
+  background: linear-gradient(rgba(240, 243, 231,0.6),rgba(231, 231, 231,0.6),rgba(240, 243, 231,0.6));
+  border-radius: 15px;
+  box-shadow:-8px 8px 12px 0 rgba(0, 0, 0, 0.3),12px -12px 16px rgba(255, 255, 255, 0.25);
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+  text-align: center;
+}
+
+td {
+  width: 25%;
+  height: 15%;
+}
+
+tr {
+  width: 100%;
+}
+
+td button {
+  width: 100%;
+  height: 80%;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),-8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+}
+
+td button:hover{
+  background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  transform: scale(1.1);
+}
+
+td button:active{
+  background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+  box-shadow: inset 2px 0 5px gray;
+}
+
+.numbers {
+  background-color: #64E884;
+}
+
+.symbols {
+  background-color: #3C3C40;
+  color: #C3C7BD;
+}
+
+.delete {
+  color: #BA1E0A;
+}
+
+.result {
+  background-color: #BA1E0A;
+  color: #C3C7BD;
+}
+
+#calc-cient button {
+  background-color: #494F4E;
+  color: #C3C7BD;
+}
+
+@media (min-width: 400px) {
+  main {
+    width: 85%;
+  }
+
+  div input {
+    font-size: 20px;
+  }
+
+  td button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 80%;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  div input {
+    font-size: 23px;
+    padding: 6px;
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1100px) {
+  main {
+    width: 75%;
+    height: 50%;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  main section {
+    flex-direction: row;
+  }
+
+  #first, #second {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1440px) {
+  main {
+    width: 55%;
+  }
+}
+
+@media (min-width: 1920px) {
+  main {
+    width: 55%;
+  }
+}
+
+@media (max-height: 630px) {
+  main {
+    height: 55%;
+  }
+}
+
+@media (max-height: 740px) {
+  main {
+    height: 70%;
+  }
+}
+
