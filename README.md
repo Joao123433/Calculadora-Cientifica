@@ -1,5 +1,5 @@
 # Calculadora Científica
-Este é um aplicativo de calculadora simples feito em HTML, CSS e TypeScript. Além das operações aritméticas básicas, a calculadora científica oferece funções trigonométricas, logarítmicas, exponenciais e outras funcionalidades avançadas. A interface inclui suporte para entrada de botões e teclado, proporcionando uma experiência completa para cálculos científicos.
+Este é um aplicativo de calculadora simples feito em HTML, CSS e TypeScript. Além das operações aritméticas básicas, a calculadora científica oferece funções trigonométricas, logarítmicas, exponenciais e outras funcionalidades avançadas. A interface inclui suporte para entrada de botões e teclado, proporcionando uma experiência completa para cálculos científicos. A calculadora se adapta a várias tamanhos de tela para uma experiência de usuário perfeita.
 
 ## Link para o projeto
 - https://joao123433.github.io/Calculadora-Cientifica

@@ -87,6 +87,7 @@ function calcFactorial(a: number){
 
 function factorial() {
   inputConta.value = "ERROR"
+
   const result = eval(calcFactorial(eval(expression.join(""))))
   verifyErrors(result)
 }
