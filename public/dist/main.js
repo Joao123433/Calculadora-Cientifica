@@ -50,7 +50,7 @@ function clearAll() {
     inputValue.value = "";
     screenValue = [];
     expression = [];
-    inputValue.focus();
+    widthFocus();
 }
 function deleteOne() {
     if (inputValue.value !== "") {
@@ -58,7 +58,12 @@ function deleteOne() {
         expression.pop();
         inputValue.value = screenValue.join("");
     }
-    inputValue.focus();
+    widthFocus();
+}
+function widthFocus() {
+    if (document.body.clientWidth >= 1280) {
+        inputValue.focus();
+    }
 }
 function calculate() {
     inputConta.value = "ERROR";
@@ -93,4 +98,4 @@ function endSetup(result) {
 }
 normalButtons.forEach(element => element.addEventListener("click", clickKeys));
 inputValue.addEventListener("keydown", eventKeys);
-document.addEventListener("DOMContentLoaded", () => inputValue.focus());
+document.addEventListener("DOMContentLoaded", widthFocus);

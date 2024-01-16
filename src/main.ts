@@ -52,7 +52,7 @@ function clearAll() {
   inputValue.value = ""
   screenValue = []
   expression = []
-  inputValue.focus()
+  widthFocus()
 }
 
 function deleteOne() {
@@ -61,7 +61,13 @@ function deleteOne() {
     expression.pop()
     inputValue.value = screenValue.join("")
   }
-  inputValue.focus()
+  widthFocus()
+}
+
+function widthFocus() {
+  if(document.body.clientWidth >= 1280) {
+    inputValue.focus()
+  }
 }
 
 function calculate() {
@@ -104,4 +110,4 @@ function endSetup(result: string) {
 
 normalButtons.forEach(element => element.addEventListener("click", clickKeys))
 inputValue.addEventListener("keydown", eventKeys)
-document.addEventListener("DOMContentLoaded", () => inputValue.focus())
+document.addEventListener("DOMContentLoaded", widthFocus)
